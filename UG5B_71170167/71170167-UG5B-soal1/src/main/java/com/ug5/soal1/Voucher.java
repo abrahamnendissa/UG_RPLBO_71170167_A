@@ -1,7 +1,7 @@
 package com.ug5.soal1;
 
 public class Voucher {
-    private String kode;
+    private String kode = "VC";
     private long nominal;
 
     public void setNominal(long nominal) {
@@ -12,10 +12,12 @@ public class Voucher {
         return kode;
     }
     public void buatVoucher(){
-    if(nominal <= 0) {
-        kode = "VC";
-    } else {
-        kode = "VC"+ nominal;
+        if (nominal <= 0){
+            kode = getKode();
+        }else {
+            kode = getKode()+ nominal;
         }
+        String kode1 = kode.substring(0,2);
+        System.out.println(kode1);
     }
 }

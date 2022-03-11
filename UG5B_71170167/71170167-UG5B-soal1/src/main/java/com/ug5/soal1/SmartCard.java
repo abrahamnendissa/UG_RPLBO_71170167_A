@@ -20,7 +20,10 @@ public class SmartCard {
         this.saldo = saldo;
     }
 
-    public void topUp(Voucher vcr){
+    public void topUp(Voucher vch){
+        vch.setNominal(100000);
+        saldo = saldo + 100000;
+        System.out.println("Kode Voucher: " + vch.getKode() + "|| Top up sukses!");
 
     }
 }

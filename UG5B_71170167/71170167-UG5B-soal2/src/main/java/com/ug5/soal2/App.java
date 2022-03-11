@@ -3,7 +3,7 @@ package com.ug5.soal2;
 public class App
 {
     public static void infoBuku(Buku book){
-
+        System.out.println();
     }
     public static void main( String[] args ){
         Buku bukuA = new Buku("Cinta itu Alasan Sekaligus Tujuan","Kang Maman",62400,5);
